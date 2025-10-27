@@ -127,13 +127,12 @@
 
 <!-- テキスト -->
 <div id="text">
-【16】Takaichi Sanae has become Japan’s 104th prime minister. She is making news around the world because she is Japan’s first female prime minister. Takaichi grew up near Nara. She comes from a middle-class family and likes heavy metal bands. She is an amateur drummer. She spent some time in the U.S. before going into politics in Japan in 1993. She was very close to Abe Shinzo. One of her heroes is Margaret Thatcher, the first female British prime minister. Takaichi will not have an easy job as the head of the Japanese government. Inflation is bad, and her government cannot do anything without the help of other political parties. 
-</div>
+【19】Rokkō Festival is Kobe University’s school festival held in early November each year. The committee says 17,000 visitors came over two days last year; before COVID, there were times with 36,000 visitors. This year, it will be on November 8 (Sat) and 9 (Sun). Tanabata Festival is a large summer event in early July run by a student council group. Highlights include lighting the stained glass in the main hall and fireworks. At both events, a stage is set up in front of the main building for club and circle performances, including a yukata show. The current stage scaffolding is old, so they plan to buy new stage equipment to improve safety and impact. A crowdfunding drive started in late September and runs until November 15. The target is 1,000,000 yen, and support starts from 1,000 yen. As of October 10, 49 supporters have given 248,779 yen. All funds will go to buying the stage. If the target is met but other funding does not reach the total, the money will be used for stage rental. Supporters will receive a thank-you email and returns like original stickers and notebooks with event characters.</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="16.mp3" type="audio/mpeg">
+    <source src="19.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -146,11 +145,11 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> Takaichi Sanae pursues music and spends time in the U.S. before entering politics.
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> The festivals were canceled due to safety concerns.
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> Takaichi Sanae faces significant challenges as Japan’s first female prime minister and has a notable background.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> Abe Shinzo and Margaret Thatcher shape political legacies that influence Japan.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> Heavy metal culture rises among Japanese politicians. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> Both festivals draw many visitors and feature stage events, but old equipment needs replacement.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> A crowdfunding campaign aims to fund new stage equipment, with details on goals and returns.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> Only the Tanabata Festival will be held this year. </span>
 </div>
 
 <div id="result"></div>
@@ -170,8 +169,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: a, b
-  const correctAnswers = ["a", "b"];
+  // 正解選択肢: b, c
+  const correctAnswers = ["b", "c"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -196,6 +195,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
