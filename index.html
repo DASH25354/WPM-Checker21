@@ -127,12 +127,16 @@
 
 <!-- テキスト -->
 <div id="text">
-【19】Rokkō Festival is Kobe University’s school festival held in early November each year. The committee says 17,000 visitors came over two days last year; before COVID, there were times with 36,000 visitors. This year, it will be on November 8 (Sat) and 9 (Sun). Tanabata Festival is a large summer event in early July run by a student council group. Highlights include lighting the stained glass in the main hall and fireworks. At both events, a stage is set up in front of the main building for club and circle performances, including a yukata show. The current stage scaffolding is old, so they plan to buy new stage equipment to improve safety and impact. A crowdfunding drive started in late September and runs until November 15. The target is 1,000,000 yen, and support starts from 1,000 yen. As of October 10, 49 supporters have given 248,779 yen. All funds will go to buying the stage. If the target is met but other funding does not reach the total, the money will be used for stage rental. Supporters will receive a thank-you email and returns like original stickers and notebooks with event characters.</div>
+【21】Prom is a special dance at the end of the school year. Many high school students go to Prom. It is a big event, and people feel excited and happy. At Prom, students celebrate their school year and their friendships. They dress up in nice clothes. Many boys wear suits, and many girls wear dresses. Some students do their hair and make-up. They take photos with friends and with a partner or date.
+　Prom is often in a large hall or hotel. There is music, lights, and a DJ. Students dance with friends and dance with a partner. They laugh, talk, and enjoy the night. Some schools give small awards, like “Best Smile.” There is often a special song, and many students sing together.
+　Before Prom, students make a plan. Some ask a friend to be a partner. Some invite a date. They plan how to go: by bus, by car, or with parents. They plan what to wear and when to meet. After Prom, students go home safely. Teachers also come to help and watch.
+　Prom is not only a party. It is a time to say goodbye to the school year and to look forward to the future. Many students keep Prom memories for a long time. It is a sweet and joyful night.
+</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="19.mp3" type="audio/mpeg">
+    <source src="21.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -145,11 +149,11 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> The festivals were canceled due to safety concerns.
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> Prom is a sports game at school.
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> Both festivals draw many visitors and feature stage events, but old equipment needs replacement.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> A crowdfunding campaign aims to fund new stage equipment, with details on goals and returns.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> Only the Tanabata Festival will be held this year. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> Prom is a dance where students celebrate the school year with friends or a partner.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> At Prom, students must wear uniforms and do homework.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> Prom is a special event with music, photos, and dancing. </span>
 </div>
 
 <div id="result"></div>
@@ -169,8 +173,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: b, c
-  const correctAnswers = ["b", "c"];
+  // 正解選択肢: b, d
+  const correctAnswers = ["b", "d"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -195,6 +199,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
